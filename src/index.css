@@ -1,3 +1,4 @@
+/* Layout */
 .layout {
   display: flex;
   flex-direction: column;
@@ -12,15 +13,17 @@ main {
   flex: 1;
   padding: 1em;
 }
+
 footer {
   padding: 1em;
   text-align: center;
 }
 
+/* Cat Card Styling */
 .cat-card {
   border: 1px solid #ddd;
   text-align: center;
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -29,4 +32,41 @@ footer {
 .cat-info {
   background: #f8f9fa;
   border-radius: 4px;
+}
+
+.cat-image {
+  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Search Bar and Breed Filter - Top Right */
+.search-bar-container {
+  display: flex;
+  position: absolute;
+  top: 20px; /* Adjust to fit your layout */
+  right: 20px;
+  align-items: center;
+  z-index: 10;
+}
+
+.search-bar {
+  padding: 8px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.breed-filter {
+  padding: 8px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.search-bar-top-right {
+  display: flex;
+  position: absolute;
+  top: 130px; /* Adjust to fit your layout */
+  right: 20px;
+  align-items: center;
+  z-index: 10;
 }
